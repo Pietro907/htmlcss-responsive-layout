@@ -27,6 +27,10 @@ nav .col_10 > a {
     padding: 0 1rem;
     color: var(--rsp-secondary);
 }
+.container {
+    max-width: 375px;
+    width: 100%;
+}
 
 /* #region query*/
 
@@ -36,6 +40,9 @@ nav .col_10 > a {
     }
     .dsp_none {
         display: none;
+    }
+    .container {
+        max-width: 768px;
     }
 }
 
@@ -49,7 +56,11 @@ nav .col_10 > a {
     .dsp_none {
         display: none;
     }
-    
+    .container {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -95,6 +106,12 @@ nav .col_10 > a {
 .heaven_light {
     background-color: var(--rsp-light-heanvenly);
 }
+.primary {
+    background-color: var(--rsp-primary);
+}
+.secondary {
+    background-color: var(--rsp-secondary);
+}
 .text_wht {
     color: var(--rsp-secondary);
 }
@@ -103,6 +120,9 @@ nav .col_10 > a {
 }
 
 /* #endregion color*/
+
+/* #region space text icon */
+
 .bord_none {
     border: none;
 }
@@ -125,12 +145,16 @@ nav .col_10 > a {
 .padd_1_0_0 {
     padding: 1rem 0 0;
 }
-.padd_1_1_0 {
-    padding: 1rem 3rem 0;
+.padd_2_3_0 {
+    padding: 2rem 3rem 0;
+}
+.padd_2_3 {
+    padding: 2rem 3rem;
 }
 .padd_lat{
     padding: 0 1rem;
 }
+
 .mrg_1_0 {
     margin: 1rem 0;
 }
@@ -140,6 +164,12 @@ nav .col_10 > a {
 .txt_ctr {
     text-align: center;
 }
+.icon_big {
+    font-size: 60px;
+}
+
+/* #endregion space text icon */
+
 
 /* #region flex */
 .jst_ctr {
