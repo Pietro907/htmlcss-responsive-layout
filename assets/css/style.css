@@ -3,13 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-#site_header {
-
+body{
+    max-width: 375px;
+    margin: auto;
 }
+#site_header {
+    display: flex;
+    align-items: center;
+}
+
+/* #region query*/
+
+
+
+/* #endregion query*/
 
 
 /* #region utilities*/
+
+.debug {
+    background-color: aquamarine;
+    border: 2px dashed purple;
+    height: 100px;
+}
 
 :root {
     --rsp-primary: #9792e4;
@@ -19,5 +35,40 @@
     --rsp-special: #fdc15f;
     --rsp-footer: #333333;
 }
+
+.heaven {
+    background-color: var(--rsp-heanvenly);
+}
+.text_wht {
+    color: var(--rsp-secondary);
+}
+ .padd_1 {
+    padding: 1rem;
+ }
+.jst_end{
+    display: flex;
+    justify-content: end;
+}
+
+/* #region col*/
+
+.col_2 {
+    width: calc(100% / 12 * 2);
+}
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+.col_6 {
+    width: calc(100% / 12 * 6);
+}
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+.col_12 {
+    width: 100%;
+}
+
+/* #endregion col*/
+
 
 /* #endregion utilities*/
