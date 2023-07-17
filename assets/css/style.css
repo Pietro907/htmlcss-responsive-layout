@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#site_header {
+
+}
+
+
+/* #region utilities*/
+
+:root {
+    --rsp-primary: #9792e4;
+    --rsp-secondary: #ffffff;
+    --rsp-heanvenly: #0084fd;
+    --rsp-light-heanvenly: #b5ddff;
+    --rsp-special: #fdc15f;
+    --rsp-footer: #333333;
+}
+
+/* #endregion utilities*/
