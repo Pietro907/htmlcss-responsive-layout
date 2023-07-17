@@ -30,7 +30,7 @@ nav .col_10 > a {
 
 /* #region query*/
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
     #site_header{
         max-width: 768px;
     }
@@ -78,6 +78,8 @@ nav .col_10 > a {
     height: 100px;
 }
 
+/* #region color*/
+
 :root {
     --rsp-primary: #9792e4;
     --rsp-secondary: #ffffff;
@@ -90,22 +92,64 @@ nav .col_10 > a {
 .heaven {
     background-color: var(--rsp-heanvenly);
 }
+.heaven_light {
+    background-color: var(--rsp-light-heanvenly);
+}
 .text_wht {
     color: var(--rsp-secondary);
 }
+.txt_heaven {
+    color: var(--rsp-heanvenly);
+}
+
+/* #endregion color*/
+.bord_none {
+    border: none;
+}
 .btn_radius {
     border-radius: 25px;
+}
+.radius_15 {
+    border-radius: 15px;
+}
+.padd_m1{
+    padding: -1rem;
 }
 
 .padd_05 {
     padding: 0.5rem;
 }
- .padd_1 {
+.padd_1 {
     padding: 1rem;
- }
- .padd_lat{
+}
+.padd_1_0_0 {
+    padding: 1rem 0 0;
+}
+.padd_1_1_0 {
+    padding: 1rem 3rem 0;
+}
+.padd_lat{
     padding: 0 1rem;
- }
+}
+.mrg_1_0 {
+    margin: 1rem 0;
+}
+ .mrg_2_0_0 {
+    margin: 2rem 0 0;
+}
+.txt_ctr {
+    text-align: center;
+}
+
+/* #region flex */
+.jst_ctr {
+    justify-content: center;
+}
+ .flex_col_ctr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .jst_end{
     display: flex;
     justify-content: end;
@@ -114,9 +158,9 @@ nav .col_10 > a {
     align-items: center;
 }
 
+/* #endregion flex */
 
-
-/* #region col*/
+/* #region col card*/
 
 .col_2 {
     width: calc(100% / 12 * 2);
@@ -134,10 +178,16 @@ nav .col_10 > a {
     width: calc(100% / 12 * 10);
 }
 .col_12 {
+    width: 90%;
+}
+.card {
+    width: 100%;
+}
+.card > img {
     width: 100%;
 }
 
-/* #endregion col*/
+/* #endregion col card*/
 
 
 /* #endregion utilities*/
