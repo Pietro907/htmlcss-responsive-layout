@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive layout</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
-    <header id="site_header" class="heaven padd_1">
+    <header class="heaven">
 
-        <div class="col_6">
-            <img src="./assets/img/logo.png" alt="">
-        </div>
+        <div id="site_header" class="heaven padd_1 dsp_none_lg">
+            <nav>
+                <div class="col_6">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
 
-        <div class="col_6 jst_end text_wht">
-            <i class="fa-solid fa-bars"></i>
+                <div class="col_6 jst_end text_wht">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
         </div>
-    
+        <!-- header first mobile -->
+
+        <div id="site_header_desk" class="heaven padd_1 dsp_none dsp_block">
+            <nav>
+                <div class="col_2">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+
+                <div class="col_10 jst_end align_itm">
+                    <a href="/">Planning</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Features</a>
+                    <a href="/">About Us</a>
+                    <input class="btn_radius padd_05" type="button" value="Get Started">
+                </div>
+
+            </nav>
+        </div>
+        <!-- header desktop -->
+
     </header>
 
     <main id="site_main"></main>
 
     <footer id="site_footer"></footer>
-    
+
 </body>
+
 </html>
