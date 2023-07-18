@@ -29,7 +29,7 @@ nav .col_10 > a {
     color: var(--rsp-secondary);
 }
 .container {
-    max-width: 375px;
+    max-width: 768px;
     width: 100%;
 }
 .row {
@@ -57,27 +57,35 @@ nav .col_10 > a {
 }
 .card {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .card > img {
+    width: 100%;
+}
+.card_profile {
+    display: flex;
+    justify-content: center;
+}
+.card_profile > img {
+   width: 70%;
+   height: 130px;
+   border-radius: 100px;
+   object-fit: cover;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.card_planning {
     width: 100%;
 }
 
 
 
 /* #region query*/
-
-/* @media screen and (min-width: 320px) {
-    #site_header{
-        max-width: 768px;
-    }
-    .dsp_none {
-        display: none;
-    }
-    .container {
-        max-width: 768px;
-    }
-
-} */
 
 @media screen and (min-width: 768px) {
 
@@ -86,9 +94,12 @@ nav .col_10 > a {
         background-color: var(--rsp-heanvenly);
         width: 100%;
     }
-
     .container {
         max-width: 1200px;
+        padding: 0 1rem;
+    }
+    .row {
+        flex-direction: row;
     }
     .col_8_md {
         width: calc(100% / 12 * 8);
@@ -96,9 +107,26 @@ nav .col_10 > a {
     .col_4_md {
         width: calc(100% / 12 * 4);
     }
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .card_profile > img {
+        width: 100%;
+        height: 130px;
+        border-radius: 100px;
+        object-fit: cover;
+    }
+    .skill > p, h3 {
+        text-align: start;
+        padding: 0 0 0 2rem;
+    }
+    
+
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     
     #site_header {
         background-color: var(--rsp-heanvenly);
@@ -110,8 +138,20 @@ nav .col_10 > a {
     .dsp_none_lg {
         display: none;
     }
+    .container {
+        width: 1200px;
+    }
+    .row {
+        flex-direction: row;
+    }
+    .col_8_md {
+        width: calc(100% / 12 * 8);
+    }
+    .col_4_md {
+        width: calc(100% / 12 * 4);
+    }
 
-}
+} */
 
 /* #endregion query*/
 
@@ -187,7 +227,6 @@ nav .col_10 > a {
 .padd_m1{
     padding: -1rem;
 }
-
 .padd_05 {
     padding: 0.5rem;
 }
@@ -227,11 +266,11 @@ nav .col_10 > a {
 .jst_ctr {
     justify-content: center;
 }
- .flex_col_ctr {
+/*  .flex_col_ctr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 .jst_end{
     display: flex;
     justify-content: end;
@@ -242,10 +281,6 @@ nav .col_10 > a {
 
 /* #endregion flex */
 
-/* #region col card*/
-
-
-/* #endregion col card*/
 
 
 /* #endregion utilities*/
