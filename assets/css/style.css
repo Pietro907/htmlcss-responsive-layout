@@ -31,6 +31,7 @@ nav .col_10 > a {
 .container {
     max-width: 768px;
     width: 100%;
+    margin: 0 auto;
 }
 .row {
     width: 100%;
@@ -68,7 +69,7 @@ nav .col_10 > a {
     justify-content: center;
 }
 .card_profile > img {
-   width: 70%;
+   width: 130px;
    height: 130px;
    border-radius: 100px;
    object-fit: cover;
@@ -108,6 +109,7 @@ nav .col_10 > a {
     .container {
         max-width: 1200px;
         padding: 0 1rem;
+        margin: 0 auto;
     }
     .flex_md {
         display: flex;
@@ -141,7 +143,7 @@ nav .col_10 > a {
         flex-direction: row;
     }
     .card_profile > img {
-        width: 100%;
+        width: 130px;
         height: 130px;
         border-radius: 100px;
         object-fit: cover;
@@ -167,6 +169,7 @@ nav .col_10 > a {
     }
     .container {
         max-width: 1920px;
+        margin: 0 auto;
     }
     .row {
         flex-direction: row;
@@ -175,9 +178,11 @@ nav .col_10 > a {
         display: flex;
         flex-direction: column;
     }
+    .mrg_cad {
+        margin: 0 5rem;
+    }
     .flex_lg {
         display: flex;
-        
     }
     .jst_lg {
         justify-content: center;
