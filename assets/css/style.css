@@ -61,7 +61,7 @@ nav .col_10 > a {
     flex-direction: column;
 }
 .card > img {
-    width: 100%;
+    width: 50%;
 }
 .card_profile {
     display: flex;
@@ -171,13 +171,26 @@ nav .col_10 > a {
     .row {
         flex-direction: row;
     }
+    .row_col_sm {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex_lg {
+        display: flex;
+        
+    }
+    .jst_lg {
+        justify-content: center;
+    }
     .col_8_md {
         width: calc(100% / 12 * 8);
     }
     .col_4_md {
         width: calc(100% / 12 * 4);
     }
-
+    .col_8_md {
+        width: calc(100% / 12 * 8);
+    }
 }
 
 /* #endregion query*/
@@ -305,4 +318,4 @@ nav .col_10 > a {
 
 
 
-/* #endregion utilities*/
+/* #endregion utilities */
